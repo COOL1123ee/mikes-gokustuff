@@ -9,7 +9,7 @@ controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_on_score():
     global mySprite, mySprite4, mySprite5
-    sprites.destroy(mySprite3)
+    sprites.destroy(mySprite3, effects.warm_radial, 5000)
     mySprite = sprites.create(img("""
             . . . . 5 5 5 . . . . . . . . .
             . . . . 5 5 5 5 5 5 . . . . . .
